@@ -1,6 +1,8 @@
 #!/bin/sh
 #Install samba4 on centos 6.8
 #update
+#Url https://goo.gl/RKNQKI or
+#https://raw.githubusercontent.com/JohnWillker/samba4_centos_6.8/master/samba4_centos6.8.sh
 echo "###############################################################"
 echo "Install Samba 4"
 echo "Create by John Willker 04/01/2017"
@@ -28,6 +30,9 @@ echo "export SHELL=/bin/zsh
 exec /bin/zsh -l" >> ~/home/$USER/.bash_profile
 #Install oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+cd /home/admin/
+wget https://raw.githubusercontent.com/JohnWillker/dotfiles/master/.vimrc
 
 #Disable Firewall
 echo "Disable Firewall ..."
